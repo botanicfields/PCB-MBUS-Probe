@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "BF-032"
-Date "2021-06-12"
-Rev "V01L01"
+Date "2021-06-30"
+Rev "V01L02"
 Comp "Copyright 2021 BotanicFields, Inc."
 Comment1 "M-BUS Probe"
 Comment2 ""
@@ -276,50 +276,6 @@ F 3 "~" H 10500 1500 50  0001 C CNN
 	1    10500 1500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole H5
-U 1 1 5F550331
-P 10500 1750
-F 0 "H5" H 10600 1796 50  0000 L CNN
-F 1 "MountingHole" H 10600 1705 50  0000 L CNN
-F 2 "bf:BF@MountingHole_2.2mm_M2" H 10500 1750 50  0001 C CNN
-F 3 "~" H 10500 1750 50  0001 C CNN
-	1    10500 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H6
-U 1 1 5F55033B
-P 10500 2000
-F 0 "H6" H 10600 2046 50  0000 L CNN
-F 1 "MountingHole" H 10600 1955 50  0000 L CNN
-F 2 "bf:BF@MountingHole_2.2mm_M2" H 10500 2000 50  0001 C CNN
-F 3 "~" H 10500 2000 50  0001 C CNN
-	1    10500 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H7
-U 1 1 5F550345
-P 10500 2250
-F 0 "H7" H 10600 2296 50  0000 L CNN
-F 1 "MountingHole" H 10600 2205 50  0000 L CNN
-F 2 "bf:BF@MountingHole_2.2mm_M2" H 10500 2250 50  0001 C CNN
-F 3 "~" H 10500 2250 50  0001 C CNN
-	1    10500 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H8
-U 1 1 5F55034F
-P 10500 2500
-F 0 "H8" H 10600 2546 50  0000 L CNN
-F 1 "MountingHole" H 10600 2455 50  0000 L CNN
-F 2 "bf:BF@MountingHole_2.2mm_M2" H 10500 2500 50  0001 C CNN
-F 3 "~" H 10500 2500 50  0001 C CNN
-	1    10500 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7500 1050 7750 1050
 Wire Wire Line
@@ -329,152 +285,25 @@ Wire Wire Line
 	9250 1550 8800 1550
 Connection ~ 9250 2350
 Connection ~ 9750 2450
-$Comp
-L Connector_Generic:Conn_02x15_Odd_Even J2
-U 1 1 60C38331
-P 8600 4600
-F 0 "J2" H 8650 5517 50  0000 C CNN
-F 1 "PORT" H 8650 5426 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x15_P2.54mm_Vertical" H 8600 4600 50  0001 C CNN
-F 3 "~" H 8600 4600 50  0001 C CNN
-	1    8600 4600
-	-1   0    0    -1  
-$EndComp
-Text Label 8300 4200 2    50   ~ 0
-GPIO23
-Text Label 8300 4300 2    50   ~ 0
-GPIO19
-Text Label 8300 4400 2    50   ~ 0
-GPIO18
-Text Label 8300 4500 2    50   ~ 0
-GPIO3
-Text Label 8300 4600 2    50   ~ 0
-GPIO16
-Text Label 8300 4700 2    50   ~ 0
-GPIO21
-Text Label 8300 4800 2    50   ~ 0
-GPIO2
-Text Label 8300 4900 2    50   ~ 0
-GPIO12
-Text Label 8300 5000 2    50   ~ 0
-GPIO15
-Text Label 8800 3900 0    50   ~ 0
-GPIO35
-Text Label 8800 4000 0    50   ~ 0
-GPIO36
-Text Label 8800 4100 0    50   ~ 0
-EN
-Text Label 8800 4200 0    50   ~ 0
-GPIO25
-Text Label 8800 4300 0    50   ~ 0
-GPIO26
-Text Label 8800 4500 0    50   ~ 0
-GPIO1
-Text Label 8800 4600 0    50   ~ 0
-GPIO17
-Text Label 8800 4800 0    50   ~ 0
-GPIO5
-Text Label 8800 4900 0    50   ~ 0
-GPIO13
-Text Label 8800 5000 0    50   ~ 0
-GPIO0
-Text Label 8800 5100 0    50   ~ 0
-GPIO34
-Text Label 8800 4700 0    50   ~ 0
-GPIO22
-Wire Wire Line
-	9250 4400 8800 4400
-Wire Wire Line
-	8800 5200 9250 5200
-Wire Wire Line
-	9250 5200 9250 5100
-Wire Wire Line
-	8800 5300 9450 5300
-Wire Wire Line
-	9450 5300 9450 5200
-$Comp
-L power:+3V3 #PWR0101
-U 1 1 60C3D4A6
-P 9250 4300
-F 0 "#PWR0101" H 9250 4150 50  0001 C CNN
-F 1 "+3V3" H 9265 4473 50  0000 C CNN
-F 2 "" H 9250 4300 50  0001 C CNN
-F 3 "" H 9250 4300 50  0001 C CNN
-	1    9250 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0102
-U 1 1 60C3DB9D
-P 9250 5100
-F 0 "#PWR0102" H 9250 4950 50  0001 C CNN
-F 1 "+5V" H 9265 5273 50  0000 C CNN
-F 2 "" H 9250 5100 50  0001 C CNN
-F 3 "" H 9250 5100 50  0001 C CNN
-	1    9250 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+BATT #PWR0103
-U 1 1 60C3E0E9
-P 9450 5200
-F 0 "#PWR0103" H 9450 5050 50  0001 C CNN
-F 1 "+BATT" H 9465 5373 50  0000 C CNN
-F 2 "" H 9450 5200 50  0001 C CNN
-F 3 "" H 9450 5200 50  0001 C CNN
-	1    9450 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9250 4300 9250 4400
-Wire Wire Line
-	7750 5000 7750 5100
-Wire Wire Line
-	7750 5300 8300 5300
-Wire Wire Line
-	8300 5200 7750 5200
-Connection ~ 7750 5200
-Wire Wire Line
-	7750 5200 7750 5300
-Wire Wire Line
-	8300 5100 7750 5100
-Connection ~ 7750 5100
-Wire Wire Line
-	7750 5100 7750 5200
-Wire Wire Line
-	8300 4100 7750 4100
-Wire Wire Line
-	7750 4100 7750 4000
-Wire Wire Line
-	8300 3900 7750 3900
-Wire Wire Line
-	7750 4000 8300 4000
-Connection ~ 7750 4000
-Wire Wire Line
-	7750 4000 7750 3900
-$Comp
-L power:VBUS #PWR0104
-U 1 1 60C42B08
-P 7750 5000
-F 0 "#PWR0104" H 7750 4850 50  0001 C CNN
-F 1 "VBUS" H 7765 5173 50  0000 C CNN
-F 2 "" H 7750 5000 50  0001 C CNN
-F 3 "" H 7750 5000 50  0001 C CNN
-	1    7750 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 60C43230
-P 7750 4200
-F 0 "#PWR0105" H 7750 3950 50  0001 C CNN
-F 1 "GND" H 7755 4027 50  0000 C CNN
-F 2 "" H 7750 4200 50  0001 C CNN
-F 3 "" H 7750 4200 50  0001 C CNN
-	1    7750 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 4200 7750 4100
-Connection ~ 7750 4100
+NoConn ~ 8300 1350
+NoConn ~ 8300 1450
+NoConn ~ 8300 1550
+NoConn ~ 8300 1650
+NoConn ~ 8300 1750
+NoConn ~ 8300 1850
+NoConn ~ 8300 2050
+NoConn ~ 8300 2150
+NoConn ~ 8800 1050
+NoConn ~ 8800 1150
+NoConn ~ 8800 1250
+NoConn ~ 8800 1350
+NoConn ~ 8800 1450
+NoConn ~ 8800 1650
+NoConn ~ 8800 1750
+NoConn ~ 8800 1850
+NoConn ~ 8800 1950
+NoConn ~ 8800 2050
+NoConn ~ 8800 2150
+NoConn ~ 8800 2250
+NoConn ~ 8300 1950
 $EndSCHEMATC
