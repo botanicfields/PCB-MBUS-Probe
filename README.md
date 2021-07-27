@@ -9,6 +9,9 @@ M5StackのM-Bus信号をピンソケットに取り出すプローブ基板の�
 
 <img src="./image/front.JPG" width=300> <img src="./image/back.JPG" width=300>
 
+## 委託販売（スイッチサイエンス）
+https://www.switch-science.com/catalog/7370/
+
 ## 内容物
 - プリント基板 ×1
 - M-Bus用ピンヘッダ(M5Stack純正品) ×1
